@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const PORTA = 3000;
 
-app.use(express.json()); // middleware — antes das rotas
+app.use(express.json()); 
 
-let tarefas = [ // let para poder reatribuir no DELETE
+let tarefas = [ 
 { id:1, texto:'Estudar Node', prioridade:'alta', coluna:'afazer' },
 { id:2, texto:'Criar API', prioridade:'alta', coluna:'andamento' },
 { id:3, texto:'Testar Postman', prioridade:'media', coluna:'concluido' },
