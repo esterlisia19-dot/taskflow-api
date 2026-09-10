@@ -8,10 +8,10 @@ listar: () => tarefas,
 listarPorColuna: (coluna) => tarefas.filter(t => t.coluna === coluna),
 buscar: (id) => tarefas.find(t => t.id === id),
 
-adicionar: ({ texto, prioridade, coluna, usuarioId }) => {
+adicionar: ({ texto, prioridade, coluna, usuarioId, projetoId }) => {
 const nova = { id: proximoId++, texto,
 prioridade: prioridade || 'media',
-coluna: coluna || 'afazer', usuarioId };
+coluna: coluna || 'afazer', usuarioId, projetoId };
 tarefas.push(nova);
 return nova;
 },
