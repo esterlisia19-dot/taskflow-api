@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const tarefasController =
-require('../controllers/tarefas.controllers');
+require('../controller/tarefas.controllers');
 
 router.get('/estatisticas', tarefasController.estatisticas);
 

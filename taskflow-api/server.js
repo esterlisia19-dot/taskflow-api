@@ -1,4 +1,6 @@
 app.use(express.json()); 
+app.use(validarContentType);
+app.use(logger);
 
 app.use('/tarefas', tarefasRoutes);
 app.use('/usuarios', usuariosRoutes);
